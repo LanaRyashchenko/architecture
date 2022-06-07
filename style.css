@@ -53,6 +53,13 @@ button {
     transition: 1s;
 }
 
+input {
+        padding: 0px;
+        border-width: 0px;
+        border-color: unset;
+
+}
+
 
 header {
     align-items: center;
@@ -166,23 +173,24 @@ border-top: 1px #005BBB solid;
 }
 
 .history_column {
-    flex: 1 0;
+    display: flex;
 	width: 50%;
     background-color: #005BBB;
-    display: flex;
-    align-items: center;
     height: 394px;
+    position: relative;
+    align-items: center;
 }
 
 .history_column::before {
-    content: "";
-   
-    width: 100px;
+    content: " ";
+    width: 10px;
     height: 100%;
     background-color: #FFD500;
+    position: absolute;
 }
+
 .text {
-    padding: 67px 40px 40px 30px;
+    padding: 60px 40px 40px 40px;
     color: #FFFFFF;
     font-family: 'Montserrat';
 font-style: normal;
@@ -196,3 +204,41 @@ margin-bottom: 0px;
 span {
     font-size: 48px;
 }
+
+.contact_form {
+    border: 1px solid #005BBB;
+    display: flex;
+    padding: 28px;
+    justify-content: space-between;
+}
+
+input[type=text] {
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 22px;
+text-align: center;
+color: #005BBB;
+width: 23%;
+
+}
+
+input[type=submit] {
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 28px;
+line-height: 34px;
+text-align: center;
+letter-spacing: 0.06em;
+background: #005BBB;
+color: #FFFFFF;
+padding: 13px 56px;
+}
+
+::placeholder {
+    color: #005BBB;
+    opacity: 0.5;
+  }
+  
