@@ -46,7 +46,7 @@ button {
   
 }
 
-.link {
+.link, a {
     text-decoration: none;
     cursor: pointer;
     color: inherit;
@@ -95,23 +95,23 @@ justify-content: center;
     
 }
 
-.slider_img {
+.gallery {
    display: flex;
    justify-content: center;
    gap: 40px;
 }
 
-.slider_img:last-child {
+.gallery:last-child {
     margin-right: 0px;
 }
 
-.slider_control {
+.slick-dots {
     display: flex;
     justify-content: center;
     margin: 40px 0px 80px;
 }
 
-.control {
+.slick-dots button {
     width: 18px;
     height: 18px;
     border: 1px solid #005BBB;
@@ -120,12 +120,20 @@ justify-content: center;
 
 }
 
-.control:last-child {
+.slick-dots:last-child {
     margin-right: 0px;
 }
 
-.control:first-child {
-   background-color: #005BBB;
+.slick-dots .slick-active button {
+background: #005BBB;
+}
+
+.slick-dots button {
+    width: 18px;
+    height: 18px;
+    border: 1px solid #005BBB;
+    border-radius: 50%;
+    margin: 0px 8px 0px;
 }
 
 .about {
@@ -139,10 +147,12 @@ justify-content: center;
 }
 
 p {
-
     margin-bottom: 16px;
 }
 
+.br {
+    margin-bottom: 0px;
+}
 .section {
     max-width: 1024px;
     margin: 0 auto;
@@ -210,6 +220,7 @@ span {
     display: flex;
     padding: 28px;
     justify-content: space-between;
+    margin-bottom: 160px;
 }
 
 input[type=text] {
@@ -220,7 +231,7 @@ font-size: 18px;
 line-height: 22px;
 text-align: center;
 color: #005BBB;
-width: 23%;
+width: 100%;
 
 }
 
@@ -240,5 +251,12 @@ padding: 13px 56px;
 ::placeholder {
     color: #005BBB;
     opacity: 0.5;
+    text-align: left;
+
+  }
+
+  .gallery img {
+    width: 400px;
+    margin: 0 auto;
   }
   

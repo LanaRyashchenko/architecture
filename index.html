@@ -3,27 +3,30 @@
 
 <head>
     <title>Architecture</title>
-    <link rel="stylesheet" href="style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset = "utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
    
-    <link rel="icon" href="assets/favicon.ico">
 </head>
 <body>
     <header>
         <div class="logo"><img src="svg/logo_architecture.svg"></div>
         <ul class="menu">
-            <li class="menu_item">gallery</li>
-            <li class="menu_item">history</li>
-            <li class="menu_item">contact us</li>
+            <li class="menu_item"><a href="#">gallery</a></li>
+            <li class="menu_item"><a href="#">history</a></li>
+            <li class="menu_item"><a href="#">contact us</a></li>
         </ul>
            
     </header>
     <main>
         <div class="slider">
-            <div class="slider_img">
-            <img  src="img/gallery-item_1.jpg">
-            <img  src="img/gallery-item_2.jpg">
-            <img  src="img/gallery-item_3.jpg">
+            <div class="gallery">
+          <div><img  src="img/image1.png"></div> 
+          <div><img  src="img/image2.png"></div> 
+          <div><img  src="img/image3.png"></div> 
+          <div><img  src="img/image2.png"></div> 
+          <div><img  src="img/image1.png"></div> 
             </div>
         <div class="slider_control">
             <div class="control control_1"></div>
@@ -33,7 +36,7 @@
         </div>
         <section class="about">
           <p>We are an architectural firm with a long history and extensive experience. Our intention is to help Ukrainians rebuild their homes and buildings even better than they were before the war.</p>
-          <p>Please take a look at our history and contact us if you are intrested.<br> We would be really glad to join the help to Ukraine as we can.
+          <p class="br">Please take a look at our history and contact us if you are intrested.</p><p>We would be really glad to join the help to Ukraine as we can.</p>
           <p>Glory to Ukraine!</p>
         </section>
         <section class="section history">
@@ -54,5 +57,34 @@
         </section>
     </main>
     <footer></footer>
+    <script type="text/javascript" src="slick/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="slick/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script type="text/javascript">
+        $('.gallery').slick({
+              dots: true,
+              arrows: false,
+              infinite: false,
+              speed: 300,
+              slidesToShow: 3,
+              slidesToScroll: 3,
+              responsive: [
+                {
+                  breakpoint: 1199,
+                  settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                  }
+                },
+                {
+                  breakpoint: 850,
+                  settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                  }
+                }
+              ]
+            });
+    </script>
 </body>
 </html>
