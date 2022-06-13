@@ -165,6 +165,7 @@ border-top: 1px #005BBB solid;
 .section_title {
     display: inline-block;
     font-family: 'Montserrat';
+    font-style: normal;
     font-weight: 900;
     font-size: 40px;
     letter-spacing: 0.06em;
@@ -260,6 +261,23 @@ padding: 13px 56px;
     margin: 0 auto;
   }
   
+  .button_send {
+    display: none;
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 28px;
+line-height: 34px;
+text-align: center;
+letter-spacing: 0.06em;
+background: #005BBB;
+color: #FFFFFF;
+padding: 13px 56px;
+text-transform: uppercase;
+width: 100%;
+margin-bottom: 120px;
+}
+
   @media screen and (max-width: 1024px)
 {   
     header {
@@ -323,3 +341,88 @@ padding: 13px 56px;
    
 }
 }
+
+@media screen and (max-width: 375px) {
+    .logo {
+        display: none;
+    }
+    .slider {
+        max-width: 100%;
+    }
+    .about {
+       margin: 48px 20px;
+            font-size: 16px;
+            line-height: 22px;
+           
+    }
+    .section {
+        max-width: 335px;
+        margin: 0 auto;
+        margin-top: 47px;
+    }
+    .section_title {
+        width: 335px;
+        font-size: 20px;
+line-height: 24px;
+margin-bottom: 24px;
+    }
+
+    span {
+        font-size: 24px;
+line-height: 29px;
+display: block;
+    }
+
+    .text {
+        font-size: 16px;
+    line-height: 22px;
+    padding: 30px;
+    }
+
+    input[type=submit] {
+        display: none;
+    }
+    ::placeholder {
+       
+        text-align: center;
+    
+      }
+
+      .contact_form {
+          height: 148px;
+          padding: 0px;
+          margin-bottom: 19px;
+      }
+      input[type=text] {
+          padding-bottom: 90px;
+      }
+
+    .button_send {
+        display: block;
+    }
+
+    .gallery img {
+        height: 180px;
+    }
+
+    .slick-dots button {
+        width: 8px;
+        height: 8px;
+        font-size: 0px;
+    
+    }
+
+    .slick-dots {
+    margin: 13px 0px 0px;
+    }
+
+    p {
+        margin-bottom: 8px;
+    }
+
+    .history_dates {
+
+        gap: 25px;
+    }
+}
+
