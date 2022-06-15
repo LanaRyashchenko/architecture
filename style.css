@@ -60,14 +60,16 @@ input {
 
 }
 
-
+main {
+    margin: 0px 80px;
+}
 header {
     align-items: center;
     text-align: center;
 }
 
 .logo {
-    padding: 80px 0px;
+    margin: 80px 0px;
     height: 60px;
     width: auto;
 }
@@ -98,22 +100,20 @@ justify-content: center;
 .gallery {
    display: flex;
    justify-content: center;
-   gap: 40px;
+  
 }
 
-.gallery:last-child {
-    margin-right: 0px;
-}
 
 .slick-dots {
     display: flex;
     justify-content: center;
+ text-align: center;
     margin: 40px 0px 80px;
 }
 
 .slick-dots button {
-    width: 18px;
-    height: 18px;
+    width: 20px;
+    height: 20px;
     border: 1px solid #005BBB;
     border-radius: 50%;
     margin: 0px 8px 0px;
@@ -121,9 +121,7 @@ justify-content: center;
 
 }
 
-.slick-dots:last-child {
-    margin-right: 0px;
-}
+
 
 .slick-dots .slick-active button {
 background: #005BBB;
@@ -157,7 +155,7 @@ p {
 .section {
     max-width: 1024px;
     margin: 0 auto;
-margin-top: 80px;
+margin-top: 78px;
 text-align: center;
 border-top: 1px #005BBB solid;
 
@@ -279,37 +277,37 @@ width: 100%;
 margin-bottom: 120px;
 }
 
-  @media screen and (max-width: 1024px)
+  @media screen and (max-width: 1250px)
 {   
+
+    main {
+        margin: 0px 60px;
+    }
+
     header {
     text-align: left;
 }
 
 .logo {
-    padding: 48px 0px 80px 40px;
+    margin: 48px 0px 80px 44px;
 }
 .menu {
     display: none;
 }
-.gallery img {
-   
-   margin: 0px;
-}
+
 .slider {
-    max-width: 904px;
-    margin: 0 auto;
+    max-width: 100%;
    
 }
 .about {
-    max-width: 904px;
-      
         font-size: 24px;
         line-height: 34px;
-       
+ 
+    max-width: 100%;
 }
 
 .section {
-    max-width: 904px;
+    max-width: 100%;
    
 }
 .section_title {
@@ -341,14 +339,22 @@ margin-bottom: 120px;
     padding: 30px 40px;
    
 }
+
+
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 700px) {
+
+    main {
+        margin: 0px;
+    }
+
     .logo {
         display: none;
     }
     .slider {
         max-width: 100%;
+        margin: 0px;
     }
     .about {
        margin: 48px 20px;
@@ -357,9 +363,7 @@ margin-bottom: 120px;
            
     }
     .section {
-        max-width: 335px;
-        margin: 0 auto;
-        margin-top: 47px;
+        margin:47px 20px 0px 20px;
     }
     .section_title {
         width: 335px;
@@ -404,13 +408,12 @@ display: block;
 
     .gallery img {
         height: 180px;
+        min-width: 432px;
     }
 
     .slick-dots button {
         width: 8px;
         height: 8px;
-     
-    
     }
 
     .slick-dots {
