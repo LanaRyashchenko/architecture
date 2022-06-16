@@ -11,14 +11,38 @@
 </head>
 <body>
     <header>
-        <div class="logo"><img src="svg/logo_architecture.svg"></div>
+        <div class="logo"><img src="svg/logo_blue.svg"></div>
+            <div class="burger">
+                <div class="burger_field">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                 </div>      
+             </div>
         <ul class="menu">
             <li class="menu_item"><a href="#">gallery</a></li>
             <li class="menu_item"><a href="#">history</a></li>
             <li class="menu_item"><a href="#">contact us</a></li>
         </ul>
-           
-    </header>
+        </header>
+
+        <div class="popup">
+            <div class="popup_header">
+                <div class="popup_logo"><img src="svg/logo_white.svg"></div>
+                 <img class="close" src="svg/close.svg">
+            </div>
+            <ul class="menu">
+                <li class="menu_item"><a href="#">gallery</a></li>
+                <li class="menu_item"><a href="#">history</a></li>
+                <li class="menu_item"><a href="#">contact us</a></li>
+            </ul>
+            <form class="contact_form" action="/action_page.php">
+                <input type="text" name="message" placeholder="type your message here">
+                <input type="submit" value="SEND">
+              </form>
+        </div>
+
+   
     <main>
         <div class="slider">
             <div class="gallery">
