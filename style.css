@@ -69,14 +69,15 @@ header {
 }
 
 .logo {
-    margin: 60px 0px;
+    margin: 80px 0px;
     height: 60px;
     width: auto;
 }
-
+body {
+    position: relative;
+}
 .burger {
-  padding: 10px;
-  cursor: pointer;
+ 
     display: none;
 }
 
@@ -114,7 +115,7 @@ justify-content: center;
 }
 
 .slider {
-    margin: 0px 0px 80px;
+    margin: 80px 0px;
     
 }
 
@@ -299,38 +300,92 @@ margin-bottom: 120px;
 }
 
 .popup {
-    display: none;
+ 
+  
+    width: 100%;
+    background-color: #005BBB;
+    position: absolute;
+    top: 0px;
+    left: -2000px;
+    z-index: 100;
 }
-  @media screen and (max-width: 1250px)
-{   
-    .popup {
-        display: block;
-        height: 600px;
+.active {
+    left: 0px;
+}
+
+.popup_header {
+    margin: 48px 60px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ .popup_menu {
+        font-family: 'Montserrat';
+        font-weight: 400px;
+        font-size: 20px;
+        line-height: 24px;
+        color: white;
+        display: flex;
+        justify-content: center;
+        padding-top: 121px;
+        } 
+        .popup_send {
+            padding: 30px 40px;
+            border: 1px solid white;
+            display: flex;
+            padding: 28px;
+            justify-content: space-between;
+            margin: 80px 60px 148px;
+        }
+        .popup_send input[type=submit] {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 28px;
+            line-height: 34px;
+            text-align: center;
+            letter-spacing: 0.06em;
+            background: white;
+            color: #005BBB;
+            padding: 13px 56px;
+        }
+        .popup_send input[type=text] {
+            font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        text-align: center;
+        color: #ffffff;
         width: 100%;
         background-color: #005BBB;
-        position: absolute;
-        top: 0px;
-        left: 0px;
-        z-index: 100;
-        padding: 48px 60px;
-    }
+        }
+        .popup_send ::placeholder {
+            color: #ffffff;
+            opacity: 0.5;
+            text-align: left;
+        
+          }
 
-    .popup_header {
-        display: flex;
-        justify-content: space-between;
-    }
-  
-    body {
-        position: relative;
-    }
+        .close {
+            height: 48px;
+            width: auto;
+        }
+        
 
+  @media screen and (max-width: 1250px)
+{   
+   
     .burger {
         display: block;
         position: absolute;
         top: 46px;
         right: 50px;
+        padding: 10px;
+        cursor: pointer;
+        z-index: 100;
     }
-
   
     main {
         margin: 0px 60px;
@@ -339,7 +394,6 @@ margin-bottom: 120px;
     header {
     display: flex;
     justify-content: space-between;
-    position: relative;
     height: 100%;
 }
 
@@ -348,11 +402,11 @@ margin-bottom: 120px;
 }
 .menu {
     display: none;
-}
+} 
 
 .slider {
     max-width: 100%;
-
+        margin: 0px 0px 80px;
 }
 .about {
         font-size: 24px;
@@ -394,8 +448,6 @@ margin-bottom: 120px;
     padding: 30px 40px;
    
 }
-
-
 }
 
 @media screen and (max-width: 700px) {
@@ -403,10 +455,18 @@ margin-bottom: 120px;
     main {
         margin: 0px;
     }
+    .popup_header {
+        margin: 24px 20px 0px;
+    } 
+
+    
+    header {
+        height: 100%;
+    }
 
     .logo {
         display: none;
-    }
+    } 
     .slider {
         max-width: 100%;
         margin: 0px;
@@ -447,6 +507,19 @@ display: block;
         text-align: center;
     
       }
+     .popup_form {
+        margin: 90px 20px 60px;
+      } 
+
+      .popup_send {
+        margin: 80px 0px 148px;
+      }
+     
+      .popup_send ::placeholder {
+        text-align: center;
+      }
+
+
 
       .contact_form {
           height: 148px;
@@ -459,6 +532,9 @@ display: block;
 
     .button_send {
         display: block;
+    }
+    .button_send {
+        margin: 0px;
     }
 
     .gallery img {
@@ -483,5 +559,47 @@ display: block;
 
         gap: 25px;
     }
+
+     .popup_button {
+    background: #ffffff;
+    color: #005BBB;
+  
+
+    } 
 }
 
+@media screen and (max-width: 450px) {
+    .popup_logo img{
+    display: block;
+    height: 48px;
+  
+    }
+    .burger {
+       
+        top: 20px;
+        right: 20px;
+      
+    }
+    .popup_menu {
+        justify-content: left;
+        padding-top: 48px;
+        flex-direction: column;
+    }
+
+    .menu_item {
+        margin: 0px 20px 48px;
+        text-align: left;
+    }
+
+    .menu_item:last-child {
+        margin: 0px 20px;
+    }
+
+
+}
+
+@media screen and (max-width: 375px) {
+   .section_title {
+       width: 100%;
+   } 
+}

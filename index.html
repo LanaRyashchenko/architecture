@@ -12,7 +12,7 @@
 <body>
     <header>
         <div class="logo"><img src="svg/logo_blue.svg"></div>
-            <div class="burger">
+            <div class="burger" id="burger">
                 <div class="burger_field">
                     <span class="line"></span>
                     <span class="line"></span>
@@ -24,24 +24,27 @@
             <li class="menu_item"><a href="#">history</a></li>
             <li class="menu_item"><a href="#">contact us</a></li>
         </ul>
-        </header>
 
-        <div class="popup">
+        <div class="popup" id="popup">
             <div class="popup_header">
                 <div class="popup_logo"><img src="svg/logo_white.svg"></div>
-                 <img class="close" src="svg/close.svg">
+                <div class="close" id="close"><img class="close" src="svg/icon.svg"></div>
             </div>
-            <ul class="menu">
+            <ul class="popup_menu">
                 <li class="menu_item"><a href="#">gallery</a></li>
                 <li class="menu_item"><a href="#">history</a></li>
                 <li class="menu_item"><a href="#">contact us</a></li>
-            </ul>
-            <form class="contact_form" action="/action_page.php">
+            </ul> 
+          <div class="popup_form">
+            <form class="contact_form popup_send" action="/action_page.php">
                 <input type="text" name="message" placeholder="type your message here">
                 <input type="submit" value="SEND">
+              
               </form>
+              <button type="submit" class="button_send popup_button">send</button>
+            </div>
         </div>
-
+    </header>
    
     <main>
         <div class="slider">
@@ -81,31 +84,7 @@
     <script type="text/javascript" src="slick/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="slick/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="slick/slick.min.js"></script>
-    <script type="text/javascript">
-        $('.gallery').slick({
-              dots: true,
-              arrows: false,
-              infinite: false,
-              speed: 300,
-              slidesToShow: 3,
-              slidesToScroll: 3,
-              responsive: [
-                {
-                  breakpoint: 1199,
-                  settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 2
-                  }
-                },
-                {
-                  breakpoint: 950,
-                  settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                  }
-                }
-              ]
-            });
-    </script>
+    <script type="text/javascript" src="js/index.js"></script>
+       
 </body>
 </html>
