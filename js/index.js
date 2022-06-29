@@ -7,7 +7,7 @@ $('.gallery').slick({
     slidesToScroll: 3,
     responsive: [
       {
-        breakpoint: 1199,
+        breakpoint: 1376,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2
@@ -25,16 +25,16 @@ $('.gallery').slick({
 
   const burger = document.querySelector("#burger");
   const popup = document.querySelector("#popup");
-  const close = document.querySelector("#close");
+  const closeUp = document.querySelector("#close");
 
   burger.addEventListener('click', addClass);
   function addClass() {
     var popActive = document.getElementById("popup"); 
     popActive.classList.add("active");
-  };
+  }
 
-  close.addEventListener('click', deleteClass);
+  closeUp.addEventListener('click', deleteClass);
   function deleteClass() {
     var notActive = document.getElementById("popup"); 
     notActive.classList.remove("active");
-  };
+  }

@@ -3,22 +3,23 @@
 
 <head>
     <title>Architecture</title>
-    <meta charset = "utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="style.css">
-	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-   
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+
 </head>
+
 <body>
     <header>
         <div class="logo"><img src="svg/logo_blue.svg"></div>
-            <div class="burger" id="burger">
-                <div class="burger_field">
-                    <span class="line"></span>
-                    <span class="line"></span>
-                    <span class="line"></span>
-                 </div>      
-             </div>
+        <div class="burger" id="burger">
+            <div class="burger_field">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </div>
+        </div>
         <ul class="menu">
             <li class="menu_item"><a href="#">gallery</a></li>
             <li class="menu_item"><a href="#">history</a></li>
@@ -34,57 +35,71 @@
                 <li class="menu_item"><a href="#">gallery</a></li>
                 <li class="menu_item"><a href="#">history</a></li>
                 <li class="menu_item"><a href="#">contact us</a></li>
-            </ul> 
-          <div class="popup_form">
-            <form class="contact_form popup_send" action="/action_page.php">
-                <input type="text" name="message" placeholder="type your message here">
-                <input type="submit" value="SEND">
-              
-              </form>
-              <button type="submit" class="button_send popup_button">send</button>
+            </ul>
+            <div class="popup_form">
+                <form class="contact_form popup_send" action="/action_page.php">
+                    <textarea name="message" placeholder="type your message here"></textarea>
+                    <input type="submit" value="SEND">
+
+                </form>
+                <button type="submit" class="button_send popup_button">send</button>
             </div>
         </div>
     </header>
-   
+
     <main>
         <div class="slider">
             <div class="gallery">
-          <div><img  src="img/image1.png"></div> 
-          <div><img  src="img/image2.png"></div> 
-          <div><img  src="img/image3.png"></div> 
-          <div><img  src="img/image2.png"></div> 
-          <div><img  src="img/image1.png"></div> 
+                <div><img src="img/image1.png"></div>
+                <div><img src="img/image2.png"></div>
+                <div><img src="img/image3.png"></div>
+                <div><img src="img/image2.png"></div>
+                <div><img src="img/image1.png"></div>
             </div>
-       
+
         </div>
         <section class="about">
-          <p>We are an architectural firm with a long history and extensive experience. Our intention is to help Ukrainians rebuild their homes and buildings even better than they were before the war.</p>
-          <p class="br">Please take a look at our history and contact us if you are intrested.</p><p>We would be really glad to join the help to Ukraine as we can.</p>
-          <p>Glory to Ukraine!</p>
+            <p>We are an architectural firm with a long history and extensive experience. Our intention is to help
+                Ukrainians rebuild their homes and buildings even better than they were before the war.</p>
+            <p>Please take a look at our history and contact us if you are intrested.</p>
+            <p>We would be really glad to join the help to Ukraine as we can.</p>
+            <p>Glory to Ukraine!</p>
         </section>
         <section class="section history">
             <h1 class="section_title">history</h1>
             <div class="history_dates">
-                <div class="history_column"><p class="text"><span>1890</span> Fusce rhoncus at sapien at sollicitudin. Quisque semper sollicitudin libero eget placerat. Aliquam quis laoreet tellus. In id congue lacus. Nulla vestibulum turpis et nisi consequat, non sagittis purus interdum. Nunc eu dolor urna. Quisque fermentum risus quam, at consectetur leo tincidunt id. Nulla facilisi.</p></div>
-                <div class="history_column"><p class="text"><span>1920</span> Aliquam erat volutpat. Curabitur et accumsan odio, eget scelerisque risus. Suspendisse ultrices mattis accumsan. In hac habitasse platea dictumst. In non nisl turpis. Sed sit amet purus odio. Donec aliquam leo a tortor tincidunt, vel molestie neque commodo. Ut pellentesque ut ex pulvinar aliquam. Morbi porttitor, felis quis convallis tincidunt, augue felis euismod lectus, a placerat purus justo eget magna. Mauris neque nisi, pharetra, vehicula non lorem.</p></div>
+                <div class="history_column">
+                    <p class="text"><span>1890</span> Fusce rhoncus at sapien at sollicitudin. Quisque semper
+                        sollicitudin libero eget placerat. Aliquam quis laoreet tellus. In id congue lacus. Nulla
+                        vestibulum turpis et nisi consequat, non sagittis purus interdum. Nunc eu dolor urna. Quisque
+                        fermentum risus quam, at consectetur leo tincidunt id. Nulla facilisi.</p>
+                </div>
+                <div class="history_column">
+                    <p class="text"><span>1920</span> Aliquam erat volutpat. Curabitur et accumsan odio, eget
+                        scelerisque risus. Suspendisse ultrices mattis accumsan. In hac habitasse platea dictumst. In
+                        non nisl turpis. Sed sit amet purus odio. Donec aliquam leo a tortor tincidunt, vel molestie
+                        neque commodo. Ut pellentesque ut ex pulvinar aliquam. Morbi porttitor, felis quis convallis
+                        tincidunt, augue felis euismod lectus, a placerat purus justo eget magna. Mauris neque nisi,
+                        pharetra, vehicula non lorem.</p>
+                </div>
             </div>
         </section>
         <section class="section contact">
             <h1 class="section_title">contact us</h1>
-            
-                <form class="contact_form" action="/action_page.php">
-                    <input type="text" name="message" placeholder="type your message here">
-                    <input type="submit" value="SEND">
-                  </form>
-                <button type="submit" class="button_send">send</button>
-           
+
+            <form class="contact_form" action="/action_page.php">
+                <textarea name="message" placeholder="type your message here"></textarea>
+                <input type="submit" value="SEND">
+            </form>
+            <button type="submit" class="button_send">send</button>
+
         </section>
     </main>
-    <footer></footer>
     <script type="text/javascript" src="slick/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="slick/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="slick/slick.min.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
-       
+
 </body>
+
 </html>
